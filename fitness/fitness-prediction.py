@@ -20,7 +20,7 @@ def benutzerEingabe():
     }
 
 
-def datenSpeichern(daten, dateiname="Kosta_Repository/nutzer_daten.csv"):
+def datenSpeichern(daten, dateiname="fitness/nutzer_daten.csv"):
     datei_existiert = os.path.isfile(dateiname)
     with open(dateiname, mode="a", newline='', encoding="utf-8") as csvfile:
         feldnamen = list(daten.keys())
